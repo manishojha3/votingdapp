@@ -17,7 +17,7 @@ contract Voting {
     address public admin;                 
     bool public votingOpen;               
     mapping(address => Voter) public voters; 
-    Candidate[] public candidates;        rray of candidates
+    Candidate[] public candidates;
 
     
     constructor(string[] memory candidateNames) {
@@ -53,7 +53,7 @@ contract Voting {
     }
 
     function closeVoting() public onlyAdmin {
-        votingOpen = false;  // Close the voting
+        votingOpen = false; 
     }
 
     function getCandidatesCount() public view returns (uint) {
